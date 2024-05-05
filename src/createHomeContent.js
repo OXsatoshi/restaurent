@@ -7,8 +7,12 @@ export default function createHomeContent(){
     div.appendChild(span);
     const spanSecon = createSpanWithText("Testy and affordable!");
     div.appendChild(spanSecon);
-    div.appendChild(createButtonWithText("Menu"));
-    div.appendChild(createButtonWithText("Reserve"));
+    const menuButton = createButtonWithText("Menu");
+    menuButton.classList.add("menu-button");
+    div.appendChild(menuButton);
+    const aboutButton = createButtonWithText("Reserve");
+    aboutButton.classList.add("about-button");
+    div.appendChild(aboutButton);
     homeContent.appendChild(div);
     return homeContent;
 }
